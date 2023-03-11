@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
 
     <title>Website With login & Registration</title>
 
-    <link rel="stylesheet" href="../static/styles/style.css">
+    <link rel="stylesheet" href="../static/styles/style.css" th:href="@{/styles/style.css}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -131,6 +131,6 @@
         </div>
     </div>
 
-    <script src="../static/scripts/script.js"></script>
+    <script src="../static/scripts/script.js" th:src="@{/scripts/script.js}"></script>
 </body>
 </html>
