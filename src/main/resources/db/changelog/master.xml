@@ -7,4 +7,6 @@
 
     <include file="0001_create_tables_users_and_role.xml" relativeToChangelogFile="true"/>
 
+    <include file="../testdata/0001_users_and_roles.sql" relativeToChangelogFile="true" context="dev"/>
+
 </databaseChangeLog>
