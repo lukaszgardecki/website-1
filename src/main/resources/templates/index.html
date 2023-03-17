@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +24,8 @@
           <a href="#">About</a>
           <a href="#">Services</a>
           <a href="#">Contact</a>
-          <a href="#" class="login-link-nav">Sign in</a>
+          <a href="#" class="login-link-nav" sec:authorize="!isAuthenticated()">Sign in</a>
+          <a href="#" th:href="@{/logout}" sec:authorize="isAuthenticated()">Sign out</a>
       </nav>
 
 

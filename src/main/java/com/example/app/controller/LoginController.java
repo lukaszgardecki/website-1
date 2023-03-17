@@ -8,6 +8,6 @@ public class LoginController {
 
     @PostMapping("/success")
     public String successLogin() {
-        return "redirect:/user";
+        return "redirect:/";
     }
 }
