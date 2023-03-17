@@ -19,7 +19,7 @@ public class SecurityConfig {
 
         http.formLogin(login -> login
                 .loginPage("/").permitAll()
-                  .successForwardUrl("/user")
+                .successForwardUrl("/success")
         );
 
         return http.authorizeHttpRequests(requests -> requests
