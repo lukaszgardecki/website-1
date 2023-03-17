@@ -12,17 +12,19 @@
 </head>
 <body>
     <header class="header">
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
       <nav class="navbar">
-          <a href="#">Home</a>
+          <a href="#" th:href="@{/}">Home</a>
           <a href="#">About</a>
           <a href="#">Services</a>
           <a href="#">Contact</a>
+          <a href="#" class="login-link-nav">Sign in</a>
       </nav>
 
-      <form action="#" class="search-bar">
-          <input type="text" placeholder="Search...">
-          <button type="submit"><i class='bx bx-search'></i></button>
-      </form>
+
     </header>
 
     <div class="background"></div>
@@ -102,7 +104,7 @@
                     <button type="submit" class="btn">Sign Up</button>
 
                     <div class="login-register">
-                        <p>Already have an account? <a href="#" class="login-link">Sign in</a></p>
+                        <p>Already have an account? <a href="#" class="login-link-reg">Sign in</a></p>
                     </div>
                 </form>
             </div>
