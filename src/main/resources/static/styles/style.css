@@ -186,50 +186,73 @@ body {
 
 
 .logreg-box .form-box.login {
-    transform: translateX(0);
+    transform: translateX(600px);
     transition: transform .6s ease;
-    transition-delay: .7s;
+    transition-delay: 0s;
 }
 
 .logreg-box .form-box.register {
-    transform: translateX(600px);
+    transform: translateX(1000px);
     transition: transform .6s ease;
     transition-delay: 0s;
 }
 
 .logreg-box .form-box.forgot {
-    transform: translateX(1000px);
+    transform: translateX(1400px);
     transition: transform .6s ease;
     transition-delay: 0s;
 }
-
-.logreg-box.active .form-box.login {
-    transform: translateX(600px);
-    transition-delay: 0s;
-}
-
-.logreg-box.active .form-box.register {
+/*----*/
+.logreg-box.show-login .form-box.login {
     transform: translateX(0);
+    transition: transform .6s ease;
     transition-delay: .7s;
 }
 
-.logreg-box.active .form-box.forgot {
+.logreg-box.show-login .form-box.register {
     transform: translateX(1000px);
-    transition-delay: .7s;
-}
-
-.logreg-box.active2 .form-box.login {
-    transform: translateX(1000px);
+    transition: transform .9s ease;
     transition-delay: 0s;
 }
 
-.logreg-box.active2 .form-box.register {
+.logreg-box.show-login .form-box.forgot {
+    transform: translateX(1400px);
+    transition: transform 1.2s ease;
+    transition-delay: 0s;
+}
+/*----*/
+.logreg-box.show-reg .form-box.login {
     transform: translateX(600px);
+    /*transition: transform .6s ease;*/
+    transition-delay: 0s;
+}
+
+.logreg-box.show-reg .form-box.register {
+    transform: translateX(0);
+    transition: transform .6s ease;
     transition-delay: .7s;
 }
 
-.logreg-box.active2 .form-box.forgot {
+.logreg-box.show-reg .form-box.forgot {
+    transform: translateX(1400px);
+    transition-delay: .7s;
+}
+/*----*/
+.logreg-box.show-forgot .form-box.login {
+    transform: translateX(600px);
+    transition: transform .6s ease;
+    transition-delay: 0s;
+    /*transition-delay: .7s;*/
+}
+
+.logreg-box.show-forgot .form-box.register {
+    transform: translateX(1000px);
+    transition-delay: .7s;
+}
+
+.logreg-box.show-forgot .form-box.forgot {
     transform: translateX(0px);
+    transition: transform .6s ease;
     transition-delay: .7s;
 }
 
