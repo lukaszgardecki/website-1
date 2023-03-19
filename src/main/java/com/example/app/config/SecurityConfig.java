@@ -26,6 +26,10 @@ public class SecurityConfig {
              .logout(logout -> logout
                      .logoutRequestMatcher(new AntPathRequestMatcher("/logout/**", HttpMethod.GET.name()))
                      .logoutSuccessUrl("/?logout").permitAll())
+             .rememberMe(remember -> remember
+                     .key("AasdFghijKlMnopqRstuVwxYZ0123456789")
+                     .tokenValiditySeconds(60*60*24*30))
+
                 // to show H2 console:
              .csrf(csrf -> csrf.ignoringRequestMatchers(PathRequest.toH2Console()))
              .headers().frameOptions().sameOrigin();
