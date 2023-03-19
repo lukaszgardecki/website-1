@@ -366,3 +366,21 @@ body {
 .login-register p a:hover {
     text-decoration: underline;
 }
+
+.notification-bar {
+    color: #fff;
+    text-align: center;
+    background-color: #c4103d;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    opacity: 0.9;
+
+    animation: hide 2s 1 forwards;
+    animation-delay: 2s;
+}
+
+@keyframes hide {
+    to {
+        opacity: 0;
+    }
+}
