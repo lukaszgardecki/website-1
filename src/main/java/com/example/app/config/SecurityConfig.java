@@ -22,10 +22,10 @@ public class SecurityConfig {
                     .anyRequest().authenticated())
              .formLogin(login -> login
                     .loginPage("/").permitAll()
-                    .successForwardUrl("/success"))
+                    .successForwardUrl("/success-login"))
              .logout(logout -> logout
-                    .logoutRequestMatcher(new AntPathRequestMatcher("/logout/**", HttpMethod.GET.name()))
-                    .logoutSuccessUrl("/"))
+                     .logoutRequestMatcher(new AntPathRequestMatcher("/logout/**", HttpMethod.GET.name()))
+                     .logoutSuccessUrl("/?logout").permitAll())
                 // to show H2 console:
              .csrf(csrf -> csrf.ignoringRequestMatchers(PathRequest.toH2Console()))
              .headers().frameOptions().sameOrigin();

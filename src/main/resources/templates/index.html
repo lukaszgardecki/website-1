@@ -35,7 +35,8 @@
 
     <div class="container">
         <div>
-            <p class="notification-bar">Belka z powiadomieniami</p>
+            <p class="notification-bar" th:if="${notification}" th:text="${notification}">Notification bar</p>
+            <p class="notification-bar" th:if="${param.logout}">You have been successfully logged out.</p>
         </div>
 
         <div class="content">
