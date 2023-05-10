@@ -1,6 +1,6 @@
 # Website With Login And Register
 
-![s2.png](https://i.postimg.cc/KjDQnckt/s2.png)
+![s2.png](https://github.com/lukaszgardecki/screenshots/blob/main/s2.PNG)
 
 The front-end of the application was created for learning purposes according to the YT [tutorial](https://www.youtube.com/watch?v=KL4--AJrJHQ). 
 The appearance of the website was designed by Halid from the
